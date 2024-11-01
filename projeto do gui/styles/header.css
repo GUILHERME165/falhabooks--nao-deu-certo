@@ -1,0 +1,218 @@
+    .cabeçalho_menu-hamburguer{
+
+width: 25px;
+
+height: 25px;
+
+background-image: url("../img/Menu.svg");
+
+background-repeat: no-repeat;
+
+background-position: center;
+
+display:inline-block;
+
+}
+
+.cabeçalho{
+
+background-color: var(--branco);
+
+display:flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+position:relative;
+
+}
+
+.container{
+
+display:flex;
+
+align-items: center;
+
+}
+
+.container_imagem{
+
+padding: 1em;
+    
+}
+
+.container_imagem2{
+
+padding: 0.1em;
+        
+}
+
+
+.lista-menu{
+
+display: none;
+
+position:absolute;
+
+top:100%;
+
+width: 65vw;
+
+}
+
+.container_botao:checked~.lista-menu{
+
+display:block;
+
+}
+
+.lista-menu_titulo, .lista-menu_item{
+
+padding:1em;
+
+background-color: var(--branco);
+
+}
+
+.lista-menu_titulo{
+
+color:var(--laranja);
+
+font-weight: 700;
+
+}
+
+.lista-menu_link{
+
+    background: var(--azul-escuro);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+
+}
+
+.container_botao{
+
+display: none;
+
+}
+
+.container_titulo{
+
+display: none;
+
+}
+
+.opçoes{
+
+display: none;
+
+}
+
+.container_texto{
+
+    display: none;
+    
+    }
+
+@media screen and (min-width: 1024px){
+.container_titulo, .container_titulo--negrito{
+font-family: var(--fonte-segundaria);
+font-size: 30px;
+display: inline-flex;
+}
+
+.container_titulo{
+font-weight: 400;
+margin-right: 100px;
+}
+
+.container_titulo--negrito{
+font-weight: 700;
+}
+
+.opçoes{
+
+display: flex;
+
+}
+
+.opçoes_item{
+
+padding: 0 1em;
+
+text-transform: uppercase;
+
+}
+
+.opçoes_link{
+
+text-decoration: none;
+
+color: var(--preto);
+
+}
+
+.conteiner_imagem-transparente{
+    
+    display: none;
+    
+}
+
+.cabeçalho_menu-hamburguer{
+    
+    display: none;
+    
+}
+
+.opçoes_botao:checked~ .lista-menu{
+
+display: block;
+
+width: auto;
+
+}
+
+.opçoes_botao{
+
+display: none;
+
+}
+
+.container_texto{
+
+display: none;
+
+}
+
+}
+
+@media screen and (min-width: 1728px){
+
+.conteiner_link{
+
+display: flex;
+
+align-items: center;
+
+text-decoration: none;
+
+color: var(--preto);
+
+}
+
+.cabeçalho{
+
+padding: 0 2em;
+
+}
+
+.opçoes{
+
+margin-right: 20px;
+
+}
+
+}
